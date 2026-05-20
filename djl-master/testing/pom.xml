@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+<parent>
+   <groupId>ai.djl</groupId>
+    <artifactId>api</artifactId>
+    <version>0.36.0</version>
+</parent>
+
+<groupId>ai.djl.fasttext</groupId>
+<artifactId>fasttext-engine</artifactId>
+<name>Fasttext Engine Adapter</name>
+<description>Fasttext Engine Adapter for DJL</description>
+<url>http://www.djl.ai/extensions/fasttext</url>
+<licenses>
+<license>
+<name>The Apache License, Version 2.0</name>
+<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+</license>
+</licenses>
+<developers>
+<developer>
+<name>DJL.AI Team</name>
+<email>djl-dev@amazon.com</email>
+<organization>Amazon AI</organization>
+<organizationUrl>https://amazon.com</organizationUrl>
+</developer>
+</developers>
+<scm>
+<connection>scm:git:git@github.com:deepjavalibrary/djl.git</connection>
+<developerConnection>scm:git:git@github.com:deepjavalibrary/djl.git</developerConnection>
+<url>https://github.com/deepjavalibrary/djl</url>
+</scm>
+<dependencies>
+<dependency>
+<groupId>ai.djl</groupId>
+<artifactId>api</artifactId>
+<version>0.36.0</version>
+<scope>compile</scope>
+</dependency>
+</dependencies>
+</project>

@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+
+<parent>
+   <groupId>ai.djl</groupId>
+       <artifactId>extensions</artifactId>
+    <version>0.36.0</version>
+</parent>
+
+<groupId>ai.djl.spark</groupId>
+<artifactId>spark_2.12</artifactId>
+<name>Apache Spark integration for DJL</name>
+<description>Apache Spark integration for DJL</description>
+<url>http://www.djl.ai/extensions/spark</url>
+<licenses>
+<license>
+<name>The Apache License, Version 2.0</name>
+<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+</license>
+</licenses>
+<developers>
+<developer>
+<name>DJL.AI Team</name>
+<email>djl-dev@amazon.com</email>
+<organization>Amazon AI</organization>
+<organizationUrl>https://amazon.com</organizationUrl>
+</developer>
+</developers>
+<scm>
+<connection>scm:git:git@github.com:deepjavalibrary/djl.git</connection>
+<developerConnection>scm:git:git@github.com:deepjavalibrary/djl.git</developerConnection>
+<url>https://github.com/deepjavalibrary/djl</url>
+</scm>
+<dependencies>
+<dependency>
+<groupId>ai.djl</groupId>
+<artifactId>api</artifactId>
+<version>0.36.0</version>
+<scope>compile</scope>
+</dependency>
+<dependency>
+<groupId>ai.djl.huggingface</groupId>
+<artifactId>tokenizers</artifactId>
+<version>0.36.0</version>
+<scope>compile</scope>
+</dependency>
+<dependency>
+<groupId>ai.djl.audio</groupId>
+<artifactId>audio</artifactId>
+<version>0.36.0</version>
+<scope>compile</scope>
+</dependency>
+<dependency>
+<groupId>org.apache.spark</groupId>
+<artifactId>spark-core_2.12</artifactId>
+<version>3.5.5</version>
+<scope>compile</scope>
+</dependency>
+<dependency>
+<groupId>org.apache.spark</groupId>
+<artifactId>spark-sql_2.12</artifactId>
+<version>3.5.5</version>
+<scope>compile</scope>
+</dependency>
+<dependency>
+<groupId>org.apache.spark</groupId>
+<artifactId>spark-mllib_2.12</artifactId>
+<version>3.5.5</version>
+<scope>compile</scope>
+</dependency>
+</dependencies>
+</project>

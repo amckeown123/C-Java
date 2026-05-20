@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+<parent>
+   <groupId>ai.djl</groupId>
+    <artifactId>api</artifactId>
+    <version>0.36.0</version>
+</parent>
+ <groupId>ai.djl.java</groupId>
+<artifactId>java</artifactId>
+<version>0.20.0</version>
+<name>DJL Serving - java</name>
+<description>Deep Java Library Serving - java</description>
+<url>http://www.djl.ai/java</url>
+<licenses>
+<license>
+<name>The Apache License, Version 2.0</name>
+<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+</license>
+</licenses>
+<developers>
+<developer>
+<name>DJL.AI Team</name>
+<email>djl-dev@amazon.com</email>
+<organization>Amazon AI</organization>
+<organizationUrl>https://amazon.com</organizationUrl>
+</developer>
+</developers>
+<scm>
+<connection>scm:git:git@github.com:deepjavalibrary/djl.git</connection>
+<developerConnection>scm:git:git@github.com:deepjavalibrary/djl.git</developerConnection>
+<url>https://github.com/deepjavalibrary/djl</url>
+</scm>
+<dependencyManagement>
+<dependencies>
+<dependency>
+<groupId>ai.djl</groupId>
+<artifactId>bom</artifactId>
+<version>0.20.0</version>
+<type>pom</type>
+<scope>import</scope>
+</dependency>
+</dependencies>
+</dependencyManagement>
+<dependencies>
+<dependency>
+<groupId>ai.djl</groupId>
+<artifactId>api</artifactId>
+<scope>compile</scope>
+</dependency>
+
+<!-- Source: https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>2.0.17</version>
+    <type>jar</type>
+</dependency>
+</dependencies>
+</project>

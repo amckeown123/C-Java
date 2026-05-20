@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule cmakelistsFolder="" moduleId="de.marw.cmake4eclipse.mbs.settings">
+		<targets>
+			<target name="all"/>
+			<target name="clean"/>
+			<target name="help"/>
+			<target name="install"/>
+			<target name="test"/>
+		</targets>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cmake4eclipse.mbs.config.debug.140673214">
+			<storageModule buildSystemId="de.marw.cmake4eclipse.mbs.cmake4eclipse" id="cmake4eclipse.mbs.config.debug.140673214" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="cmake4eclipse.mbs.config.debug.140673214" name="Debug" optionalBuildProperties="" parent="cmake4eclipse.mbs.config.debug">
+					<folderInfo id="cmake4eclipse.mbs.config.debug.140673214." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.llvm.gnu.linux.base.94183702" name="LLVM with GCC (Linux)" superClass="cdt.managedbuild.toolchain.llvm.gnu.linux.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.llvm.gnu.linux.platform.base.1446490069" isAbstract="true" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.llvm.gnu.linux.platform.base"/>
+							<builder buildPath="${workspace_loc:/C++Test}/Debug" id="cdt.managedbuild.target.llvm.builder.base.339337579" name="CDT Internal Builder.Debug" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.target.llvm.builder.base"/>
+							<tool id="cdt.managedbuild.tool.llvm.assembler.base.1978481681" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.assembler.base"/>
+							<tool id="cdt.managedbuild.tool.llvm.archiver.base.182324855" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.llvm.gnu.c.compiler.base.616285597" name="LLVM GCC" superClass="cdt.managedbuild.tool.llvm.gnu.c.compiler.base">
+								<option id="llvm.c_cpp.compiler.option.optimization.level.1260643485" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.36573928" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.220924924" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.gnu.cpp.compiler.base.1262442307" name="LLVM G++" superClass="cdt.managedbuild.tool.llvm.gnu.cpp.compiler.base">
+								<option id="llvm.c_cpp.compiler.option.optimization.level.1796074751" superClass="llvm.c_cpp.compiler.option.optimization.level" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.289837425" superClass="llvm.c_cpp.compiler.option.debugging.level" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.838444858" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.gnu.c.linker.base.882475947" name="LLVM GNU C linker" superClass="cdt.managedbuild.tool.llvm.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.llvm.gnu.cpp.linker.base.168855763" name="LLVM GNU C++ linker" superClass="cdt.managedbuild.tool.llvm.gnu.cpp.linker.base">
+								<inputType id="cdt.managedbuild.tool.llvm.c.linker.input.bc.1782925006" superClass="cdt.managedbuild.tool.llvm.c.linker.input.bc">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule buildDir="_build/${ConfigName}" moduleId="de.marw.cmake4eclipse.mbs.settings">
+				<options/>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="cmake4eclipse.mbs.config.cmake.1859839628">
+			<storageModule buildSystemId="de.marw.cmake4eclipse.mbs.cmake4eclipse" id="cmake4eclipse.mbs.config.cmake.1859839628" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="" description="Default coming from cmake" id="cmake4eclipse.mbs.config.cmake.1859839628" name="Default" parent="cmake4eclipse.mbs.config.cmake">
+					<folderInfo id="cmake4eclipse.mbs.config.cmake.1859839628." name="/" resourcePath="">
+						<toolChain id="cmake4eclipse.mbs.config.cmake.toolChain.1212593532" name="CMake driven" superClass="cmake4eclipse.mbs.config.cmake.toolChain">
+							<targetPlatform id="cmake4eclipse.mbs.targetPlatform.cmake.377496210" name="Any Platform" superClass="cmake4eclipse.mbs.targetPlatform.cmake"/>
+							<builder buildPath="/C++Test/_build/Default" id="cmake4eclipse.mbs.builder.1227363711" managedBuildOn="true" name="CMake Builder.Default" superClass="cmake4eclipse.mbs.builder"/>
+							<tool id="cmake4eclipse.mbs.toolchain.tool.dummy.1559897866" name="CMake" superClass="cmake4eclipse.mbs.toolchain.tool.dummy">
+								<inputType id="cmake4eclipse.mbs.inputType.c.87595475" superClass="cmake4eclipse.mbs.inputType.c"/>
+								<inputType id="cmake4eclipse.mbs.inputType.cpp.470949464" superClass="cmake4eclipse.mbs.inputType.cpp"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cmake4eclipse.mbs.config.release.1107010849">
+			<storageModule buildSystemId="de.marw.cmake4eclipse.mbs.cmake4eclipse" id="cmake4eclipse.mbs.config.release.1107010849" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE64" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" description="" id="cmake4eclipse.mbs.config.release.1107010849" name="Release" parent="cmake4eclipse.mbs.config.release">
+					<folderInfo id="cmake4eclipse.mbs.config.release.1107010849." name="/" resourcePath="">
+						<toolChain id="cmake4eclipse.mbs.config.release.toolChain.92784139" name="CMake driven" superClass="cmake4eclipse.mbs.config.release.toolChain">
+							<targetPlatform id="cmake4eclipse.mbs.targetPlatform.cmake.307719624" name="Any Platform" superClass="cmake4eclipse.mbs.targetPlatform.cmake"/>
+							<builder buildPath="/C++Test/_build/Release" id="cmake4eclipse.mbs.builder.1493242492" managedBuildOn="true" name="CMake Builder.Release" superClass="cmake4eclipse.mbs.builder"/>
+							<tool id="cmake4eclipse.mbs.toolchain.tool.dummy.1100551649" name="CMake" superClass="cmake4eclipse.mbs.toolchain.tool.dummy">
+								<inputType id="cmake4eclipse.mbs.inputType.c.1107981182" superClass="cmake4eclipse.mbs.inputType.c"/>
+								<inputType id="cmake4eclipse.mbs.inputType.cpp.1264768152" superClass="cmake4eclipse.mbs.inputType.cpp"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="C++Test.cmake4eclipse.mbs.projectType.380650993" name="" projectType="cmake4eclipse.mbs.projectType"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>
