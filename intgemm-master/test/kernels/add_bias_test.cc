@@ -26,7 +26,7 @@ void kernel_add_bias_test() {
 #if !defined( __EXCEPTIONS) && defined(__GNUC__) && (__GNUC__ == 9) && ((__GNUC_MINOR__ == 3) || (__GNUC_MINOR__ == 4))
     CHECK(output[i] == static_cast<ElemType_>(bias[i] + input[i])); // GCC 9.3 - exceptions breaks std::iota with newer check.
 #else
-    CHECK(output[i] == ElemType_(100 + i));
+    CHECK(output[i] == ElemType(100 + i));
 #endif
 }
 

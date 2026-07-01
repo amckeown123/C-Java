@@ -25,8 +25,8 @@ OBJS += \
 # Each subdirectory must supply rules for building sources it contributes
 src/relay/op/tensor/%.o: ../src/relay/op/tensor/%.cc src/relay/op/tensor/subdir.mk
 	@echo 'Building file: $<'
-	@echo 'Invoking: LLVM G++'
-	llvm-g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -o "$@" "$<"
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

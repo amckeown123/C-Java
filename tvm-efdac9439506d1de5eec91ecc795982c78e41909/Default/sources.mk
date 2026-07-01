@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-BC_SRCS := 
+ASM_SRCS := 
 C++M_SRCS := 
 C++_SRCS := 
 CCM_SRCS := 
@@ -12,11 +12,10 @@ CXXM_SRCS :=
 CXX_SRCS := 
 C_SRCS := 
 C_UPPER_SRCS := 
-LL_SRCS := 
 OBJ_SRCS := 
 O_SRCS := 
-BCS := 
-BC_DEPS := 
+SX_SRCS := 
+S_UPPER_SRCS := 
 C++M_DEPS := 
 C++_DEPS := 
 CCM_DEPS := 
@@ -26,11 +25,8 @@ CXXM_DEPS :=
 CXX_DEPS := 
 C_DEPS := 
 C_UPPER_DEPS := 
-LLVM_BC_EXECUTABLES := 
-LLVM_EXECUTABLES := 
+EXECUTABLES := 
 OBJS := 
-OBJ_DEPS := 
-O_DEPS := 
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
@@ -49,6 +45,48 @@ build/CMakeFiles/tvm_objs.dir/src/auto_scheduler/search_policy \
 build/CMakeFiles/tvm_objs.dir/src/autotvm \
 build/CMakeFiles/tvm_objs.dir/src/driver \
 build/CMakeFiles/tvm_objs.dir/src/ir \
+build/CMakeFiles/tvm_objs.dir/src/node \
+build/CMakeFiles/tvm_objs.dir/src/parser \
+build/CMakeFiles/tvm_objs.dir/src/printer \
+build/CMakeFiles/tvm_objs.dir/src/relay/analysis \
+build/CMakeFiles/tvm_objs.dir/src/relay/backend \
+build/CMakeFiles/tvm_objs.dir/src/relay/backend/vm \
+build/CMakeFiles/tvm_objs.dir/src/relay/ir \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/algorithm \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/annotation \
+build/CMakeFiles/tvm_objs.dir/src/relay/op \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/dyn/algorithm \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/dyn/image \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/dyn/nn \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/dyn/tensor \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/image \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/memory \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/nn \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/tensor \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/vision \
+build/CMakeFiles/tvm_objs.dir/src/relay/op/vm \
+build/CMakeFiles/tvm_objs.dir/src/relay/qnn/op \
+build/CMakeFiles/tvm_objs.dir/src/relay/qnn/pass \
+build/CMakeFiles/tvm_objs.dir/src/relay/qnn \
+build/CMakeFiles/tvm_objs.dir/src/relay/quantize \
+build/CMakeFiles/tvm_objs.dir/src/relay/transforms \
+build/CMakeFiles/tvm_objs.dir/src/runtime/stackvm \
+build/CMakeFiles/tvm_objs.dir/src/support \
+build/CMakeFiles/tvm_objs.dir/src/target \
+build/CMakeFiles/tvm_objs.dir/src/target/datatype/myfloat \
+build/CMakeFiles/tvm_objs.dir/src/target/datatype \
+build/CMakeFiles/tvm_objs.dir/src/target/opt \
+build/CMakeFiles/tvm_objs.dir/src/target/source \
+build/CMakeFiles/tvm_objs.dir/src/target/stackvm \
+build/CMakeFiles/tvm_objs.dir/src/te/autodiff \
+build/CMakeFiles/tvm_objs.dir/src/te/operation \
+build/CMakeFiles/tvm_objs.dir/src/te/schedule \
+build/CMakeFiles/tvm_objs.dir/src/te \
+build/CMakeFiles/tvm_objs.dir/src/tir/analysis \
+build/CMakeFiles/tvm_objs.dir/src/tir/ir \
+build/CMakeFiles/tvm_objs.dir/src/tir/op \
+build/CMakeFiles/tvm_objs.dir/src/tir/transforms \
+build/CMakeFiles/tvm_objs.dir/src/topi \
 build/CMakeFiles/tvm_runtime_objs.dir/src/runtime \
 build/CMakeFiles/tvm_runtime_objs.dir/src/runtime/contrib/random \
 build/CMakeFiles/tvm_runtime_objs.dir/src/runtime/contrib/sort \

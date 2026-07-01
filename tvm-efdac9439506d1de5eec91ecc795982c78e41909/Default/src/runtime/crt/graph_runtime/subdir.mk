@@ -19,8 +19,8 @@ OBJS += \
 # Each subdirectory must supply rules for building sources it contributes
 src/runtime/crt/graph_runtime/%.o: ../src/runtime/crt/graph_runtime/%.c src/runtime/crt/graph_runtime/subdir.mk
 	@echo 'Building file: $<'
-	@echo 'Invoking: LLVM GCC'
-	llvm-gcc -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -o "$@" "$<"
+	@echo 'Invoking: Cross GCC Compiler'
+	gcc -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

@@ -120,6 +120,48 @@ RM := rm
 -include build/CMakeFiles/tvm_runtime_objs.dir/src/runtime/contrib/sort/subdir.mk
 -include build/CMakeFiles/tvm_runtime_objs.dir/src/runtime/contrib/random/subdir.mk
 -include build/CMakeFiles/tvm_runtime_objs.dir/src/runtime/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/topi/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/tir/transforms/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/tir/op/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/tir/ir/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/tir/analysis/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/te/schedule/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/te/operation/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/te/autodiff/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/te/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/target/stackvm/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/target/source/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/target/opt/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/target/datatype/myfloat/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/target/datatype/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/target/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/support/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/runtime/stackvm/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/transforms/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/quantize/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/qnn/pass/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/qnn/op/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/qnn/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/vm/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/vision/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/tensor/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/nn/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/memory/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/image/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/dyn/tensor/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/dyn/nn/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/dyn/image/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/dyn/algorithm/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/annotation/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/algorithm/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/op/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/ir/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/backend/vm/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/backend/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/relay/analysis/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/printer/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/parser/subdir.mk
+-include build/CMakeFiles/tvm_objs.dir/src/node/subdir.mk
 -include build/CMakeFiles/tvm_objs.dir/src/ir/subdir.mk
 -include build/CMakeFiles/tvm_objs.dir/src/driver/subdir.mk
 -include build/CMakeFiles/tvm_objs.dir/src/autotvm/subdir.mk
@@ -136,9 +178,6 @@ RM := rm
 -include apps/bundle_deploy/subdir.mk
 -include 3rdparty/libcrc/src/subdir.mk
 ifneq ($(MAKECMDGOALS),clean)
-ifneq ($(strip $(BC_DEPS)),)
--include $(BC_DEPS)
-endif
 ifneq ($(strip $(C++M_DEPS)),)
 -include $(C++M_DEPS)
 endif
@@ -166,12 +205,6 @@ endif
 ifneq ($(strip $(C_UPPER_DEPS)),)
 -include $(C_UPPER_DEPS)
 endif
-ifneq ($(strip $(OBJ_DEPS)),)
--include $(OBJ_DEPS)
-endif
-ifneq ($(strip $(O_DEPS)),)
--include $(O_DEPS)
-endif
 endif
 
 -include ../makefile.defs
@@ -188,32 +221,25 @@ BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
-LLVM_EXECUTABLES += \
-USER_OBJS.exe \
-
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build:  secondary-outputs
+main-build: 
 
 # Tool invocations
-: $(BCS) $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
+: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
-	@echo 'Invoking: LLVM GNU C++ linker'
-	llvm-g++  -o  $(BCS) $(USER_OBJS) $(LIBS) $(OBJS)
+	@echo 'Invoking: Cross G++ Linker'
+	g++  -o  $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-USER_OBJS.exe:  $(BCS) $(OBJS) $(USER_OBJS)
-
 # Other Targets
 clean:
-	-$(RM)  USER_OBJS.exe
+	-$(RM) 
 	-@echo ' '
-
-secondary-outputs: $(LLVM_BC_EXECUTABLES)
 
 .PHONY: all clean dependents main-build
 

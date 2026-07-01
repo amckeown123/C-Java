@@ -43,8 +43,8 @@ OBJS += \
 # Each subdirectory must supply rules for building sources it contributes
 src/auto_scheduler/%.o: ../src/auto_scheduler/%.cc src/auto_scheduler/subdir.mk
 	@echo 'Building file: $<'
-	@echo 'Invoking: LLVM G++'
-	llvm-g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -o "$@" "$<"
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
