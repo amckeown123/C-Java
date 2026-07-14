@@ -1,3 +1,5 @@
+using namespace std;
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -10,12 +12,10 @@
 #include <Object.h>
 #include <ISerializable.h>
 
-
-
-using namespace std;
-
 #include <cstdint>
 #include <limits>
+
+#include <Variable.h>
 
 
 // 2. Concrete Derived Class
@@ -26,14 +26,14 @@ class Variable : public Object, ISerializable {
 
 protected:
     // This field is protected; only Animal and its children can see it
-    std::string name;
+    string name;
 protected:
     // This field is protected; only Animal and its children can see it
-    std::string value;
+    string value;
 
 protected:
     // This field is protected; only Animal and its children can see it
-	std::optional<int> column;
+	optional<int> column;
 
 protected:
     vector<string> labels;

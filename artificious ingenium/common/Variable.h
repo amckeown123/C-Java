@@ -6,6 +6,8 @@
 #include <Object.h>
 #include <ISerializable.h>
 
+#include <Variable.h>
+
 // 2. Concrete Derived Class
 class Variable : public Object, ISerializable {
 
